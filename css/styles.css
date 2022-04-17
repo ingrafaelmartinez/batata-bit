@@ -22,6 +22,8 @@ Como recomendación o buenas prácticas, se pueden ir agregando estilos de la si
     --grey: #bababa;
     --off-white: #faf8f7;
     --just-white: #fff;
+
+    --rgba-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
 *{
@@ -92,7 +94,7 @@ header img{
     background-color: var(--off-white);
 
     /* Sombra*/
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    box-shadow: var(--rgba-shadow);
     border: none;
     border-radius: 5px;
 
@@ -125,7 +127,7 @@ main{
     text-align: center;
 }
 
-.main-exchange-container--tittle{
+.main-exchange-container--title{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -169,7 +171,7 @@ main{
     font-family: var(--font-inter), sans-serif;
 }
 
-.main-currency-table .currency-table--tittle{
+.main-currency-table .currency-table--title{
     margin-bottom: 15px;
     font-family: var(--font-sans);
     font-size: 1.8rem;
@@ -178,7 +180,7 @@ main{
     color: var(--bitcoin-orange);
 }
 
-.main-commission-table .commission-table--tittle{
+.main-commission-table .commission-table--title{
     margin-bottom: 15px;
     font-family: var(--font-sans);
     font-size: 1.8rem;
@@ -368,7 +370,7 @@ main{
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--rgba-shadow); 
 }
 
 .product-detail--card .icon-card{
@@ -438,7 +440,7 @@ main{
     text-align: center;
 }
 
-.plans--tittle{
+.plans--title{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -446,17 +448,30 @@ main{
     margin-bottom: 50px;
 }
 
-.plans--tittle h2{
+.plans--title h2{
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 2.4rem;
     color: var(--warm-black);
 }
 
-.plans--tittle p{
+.plans--title p{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #757575;
+}
+
+.plans-container--card{
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: var(--rgba-shadow);
 }
