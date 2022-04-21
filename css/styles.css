@@ -518,3 +518,63 @@ main{
     font-size: 1.2rem;
     color: #757575;
 }
+
+.plan-card--ca{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.recommended-plan{
+    border: 2px solid var(--bitcoin-orange);
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+.basic{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: calc(0% - 16px);
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--grey);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.basic-plan{
+    border: 2px solid var(--grey);
+}
+
+.vip{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: calc(0% - 16px);
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: rgb(73, 41, 255);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.vip-plan{
+    border: 2px solid rgb(73, 41, 255);
+}
