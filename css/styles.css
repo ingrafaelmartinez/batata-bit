@@ -35,6 +35,7 @@ Como recomendación o buenas prácticas, se pueden ir agregando estilos de la si
 html{
     font-size: 62.5%;
     font-family: var(--font-sans);
+    scroll-behavior: smooth;
 }
 
 header{
@@ -125,6 +126,26 @@ main{
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    /* margin: 15px; */
+}
+
+.main-tables-container{
+    display: flex;
+    justify-content: space-between;
+    height: 365px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-tables-container::-webkit-scrollbar{
+    background-color: var(--soft-blue);
+    height: 4px;
+}
+
+.main-tables-container::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-blue);
+    border-radius: 4px;
 }
 
 .main-exchange-container--title{
@@ -465,6 +486,7 @@ main{
 
 .plans-container--slider{
     display: flex;
+    justify-content: space-between;
     /*gap: 15px; Esta propiedad aplica un margen entre tarjetas gracias a flexbox, pero no está implementada un 100% en todos los navegadores*/
     height: 316px;
     overflow-x: scroll;
